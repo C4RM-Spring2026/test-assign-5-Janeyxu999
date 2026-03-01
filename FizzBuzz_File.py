@@ -4,8 +4,8 @@ def FizzBuzz(start, finish):
     nums = np.arange(start, finish + 1)
     result = nums.astype(object)
 
-    mask3 = num % 3 == 0
-    mask5 = num % 5 == 0
+    mask3 = nums % 3 == 0
+    mask5 = nums % 5 == 0
 
     result[mask3] = "fizz"
     result[mask5] = "buzz"
